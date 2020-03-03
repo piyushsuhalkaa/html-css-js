@@ -3,6 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <title>Home | Level 1</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header Section -->
+    <header id="header" class="header-transparent">
+      <nav>
+        <img class="brand-logo" src="./assets/images/brand-logo.png" alt />
+        <ul class="navigation-links">
+          <a class="navigation-link active-navigation-link" href="#">Home</a>
+          <a class="navigation-link" href="assets/">About</a>
+          <a class="navigation-link" href="contacts.html">Contacts</a>
+        </ul>
+        <div>
+          <button class="book-now-btn">Book Now</button>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section>
+      <div class="hero-background"></div>
+    </section>
+    <script>
+      var header = document.getElementById("header");
+      window.onscroll = function() {
+        onScrollHeaderChange();
+      };
+      function onScrollHeaderChange() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          header.classList.remove("header-transparent");
+        } else {
+          header.classList.add("header-transparent");
+        }
+      }
+    </script>
+  </body>
 </html>

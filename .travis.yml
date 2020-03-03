@@ -1,9 +1,0 @@
-language: node_js
-node_js:
-  - "7"
-script:
-  - echo "Deploy!!"
-install:
-  - npm install -g firebase-tools
-after_success:
-  - firebase deploy --project html-css-js-2020 --token 1//0gC0FM0TCrrfBCgYIARAAGBASNwF-L9IrJid9CK752B_a85uYefcKvP2RNyW6cXyB5fPmIjBLSCyj6O9GX3ixz0AF0Efce_UFqSM

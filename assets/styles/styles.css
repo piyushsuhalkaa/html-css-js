@@ -10,8 +10,81 @@
   color: #fff;
 }
 body {
-  background-color: #fff;
+  background: #fff;
   color: var(--text-color);
   font: var(--text-font);
   letter-spacing: -0.03em;
+  margin: 0;
+  padding: 0;
+}
+header {
+  top: 0;
+  height: 80px;
+  background: #323232;
+  border-bottom-color: #444141;
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s;
+}
+.header-transparent {
+  background: rgba(255, 255, 255, 0.11);
+  height: 120px;
+  padding: 0;
+  padding-top: 2%;
+}
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+.brand-logo {
+  height: 57px;
+}
+.navigation-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.navigation-link {
+  margin: 0 30px;
+  line-height: 18px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.active-navigation-link,
+.navigation-link:hover {
+  color: var(--colour-highlight);
+}
+.book-now-btn {
+  padding: 10px 20px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+}
+.book-now-btn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #151515;
+  outline: none;
+  border: none;
+}
+.hero-background {
+  background: linear-gradient(
+      360deg,
+      rgba(18, 18, 18, 0.6) 0.91%,
+      rgba(18, 18, 18, 0.28) 47.77%,
+      rgba(39, 42, 55, 0.75) 99.52%
+    ),
+    url("../images/background.jpg");
+  background-size: cover;
+  height: 100vh;
+  z-index: -4;
 }
