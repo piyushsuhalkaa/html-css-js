@@ -1,0 +1,17 @@
+@import url("//fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CPT+Serif:400,700");
+:root {
+  --colour-highlight: #41a451;
+  --heading-font: 700 80px/86px pt serif, serif;
+  --text-color: rgba(21, 21, 21, 0.8);
+  --text-font: 300 15px/1.6 poppins, sans-serif;
+}
+::selection {
+  background: var(--colour-highlight);
+  color: #fff;
+}
+body {
+  background-color: #fff;
+  color: var(--text-color);
+  font: var(--text-font);
+  letter-spacing: -0.03em;
+}
