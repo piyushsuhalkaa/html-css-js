@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Level 1</title>
     <link rel="stylesheet" href="./assets/styles/styles.css" />
   </head>
@@ -9,6 +10,9 @@
     <!-- Header Section -->
     <header id="header" class="header-transparent">
       <nav>
+        <a class="menu-toggler" href="javascript:void(0);" onclick="showMenu()"
+          >=</a
+        >
         <img class="brand-logo" src="./assets/images/brand-logo.png" alt />
         <ul class="navigation-links">
           <a class="navigation-link active-navigation-link" href="#">Home</a>
@@ -21,24 +25,18 @@
       </nav>
     </header>
     <!-- Hero Section -->
-    <section>
-      <div class="hero-background"></div>
+    <section class="hero-wrapper">
+      <div class="hero-background">
+      <div class="hero-content">
+          <h1 class="hero-heading">Welcome</h1>
+          <span class="hero-vertical-line"></span>
+          <span class="hero-caption">
+            Our restaurant offers full-service dining with breathtaking views seen from our indoor covered patio and our outdoor sundeck.
+          </span>
+        </div>
+      </div>
+    </div>
     </section>
-    <script>
-      var header = document.getElementById("header");
-      window.onscroll = function() {
-        onScrollHeaderChange();
-      };
-      function onScrollHeaderChange() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          header.classList.remove("header-transparent");
-        } else {
-          header.classList.add("header-transparent");
-        }
-      }
-    </script>
+    <script src="./assets/scripts/script.js"></script>
   </body>
 </html>
