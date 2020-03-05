@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Level 1</title>
     <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="./assets/styles/home.css" />
   </head>
   <body>
     <!-- Header Section -->
@@ -27,16 +28,116 @@
     <!-- Hero Section -->
     <section class="hero-wrapper">
       <div class="hero-background">
-      <div class="hero-content">
+        <div class="hero-content">
           <h1 class="hero-heading">Welcome</h1>
           <span class="hero-vertical-line"></span>
           <span class="hero-caption">
-            Our restaurant offers full-service dining with breathtaking views seen from our indoor covered patio and our outdoor sundeck.
+            Our restaurant offers full-service dining with breathtaking views
+            seen from our indoor covered patio and our outdoor sundeck.
           </span>
         </div>
       </div>
-    </div>
     </section>
+    <!-- CTA Form -->
+    <section class="cta-form-wrapper">
+      <div class="cta-form-box">
+        <form class="cta-form-items">
+          <div class="cta-form-item">
+            <label class="form-item-heading">Name</label>
+            <input
+              class="form-item-input"
+              type="text"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="cta-form-item form-item-divider-line"></div>
+          <div class="cta-form-item">
+            <label class="form-item-heading">Phone </label>
+            <input
+              class="form-item-input"
+              type="tel"
+              placeholder="Your phone number"
+            />
+          </div>
+          <div class="cta-form-item form-item-divider-line"></div>
+          <div class="cta-form-item">
+            <label class="form-item-heading">Date</label>
+            <input class="form-item-input date-input" type="date" />
+          </div>
+          <div class="cta-form-item form-item-divider-line"></div>
+          <div class="cta-form-item">
+            <label class="form-item-heading">No. of People</label>
+            <div class="form-item-select-wrapper">
+              <div class="form-item-select">
+                <div class="item-select-trigger">
+                  <span>2</span>
+                  <div class="item-select-arrow"></div>
+                </div>
+                <div class="item-select-options">
+                  <span class="item-select-option" data-value="1">1</span>
+                  <span
+                    class="item-select-option item-option-selected"
+                    data-value="2"
+                  >
+                    2
+                  </span>
+                  <span class="item-select-option" data-value="3">3</span>
+                  <span class="item-select-option" data-value="4">4</span>
+                  <span class="item-select-option" data-value="5">5</span>
+                  <span class="item-select-option" data-value="6">6</span>
+                  <span class="item-select-option" data-value="7">7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cta-form-item">
+            <button class="form-item-submit-button">
+              Check availability
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="">
+      <div class="about-wrapper">
+        <div class="about-images">
+          <img
+            class="about-image-background"
+            src="./assets/images/home-about-background.jpg"
+            alt
+          />
+          <img
+            class="about-image-foreground"
+            src="./assets/images/home-about-chef.png"
+            alt
+          />
+        </div>
+        <div class="about-content">
+          <h2 class="about-heading">About Us</h2>
+          <p class="about-caption">
+            Pesto is a family owned and operated Italian Restaurant offering a
+            combination of fresh ingredients and authentic Italian cooking.
+          </p>
+          <p class="about-caption">
+            We will make sure you are served the most authentic and fresh
+            Italian dishes, while offering the best customer service. Our
+            kitchen is committed to providing our guests with the best Italian
+            Cuisine.
+          </p>
+          <img
+            class="about-signature"
+            src="./assets/images/signature.png"
+            alt
+          />
+        </div>
+      </div>
+    </section>
+    <section style="height: 900px;"></section>
+    <!-- Scripts -->
     <script src="./assets/scripts/script.js"></script>
+    <script>
+      
+    </script>
   </body>
 </html>
