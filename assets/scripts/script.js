@@ -16,7 +16,7 @@ function onScrollHeaderChange() {
 /* Show Menu on Cick Script*/
 var showMenuItem = document.getElementsByClassName("navigation-links");
 /**
- *  Fucntion To Show Menu on Click for Small Devices
+ *  Fucntion To Show Toggle Menu on Click for Small Devices
  */
 function showMenu() {
   console.log("click Detected");
