@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Level 1</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="./assets/styles/about.css" />
+  </head>
+  <body>
+    <header id="header" class="header-transparent">
+      <nav>
+        <a class="menu-toggler" href="javascript:void(0);" onclick="showMenu()">
+          =
+        </a>
+        <img class="brand-logo" src="./assets/images/brand-logo.png" alt />
+        <ul class="navigation-links">
+          <a class="navigation-link " href="index.html">Home</a>
+          <a class="navigation-link active-navigation-link" href="#">About</a>
+          <a class="navigation-link" href="contacts.html">Contacts</a>
+        </ul>
+        <div>
+          <button class="book-now-btn">Book Now</button>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-wrapper">
+      <div class="hero-background">
+        <div class="hero-content">
+          <h1 class="hero-heading">About us</h1>
+          <ul class="breadcrum-path">
+            <li>
+              <a class="breadcrum-path-parent" href="index.html">Home</a>
+            </li>
+            <li class="breadcrum-path-child">About us</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="container about-wrapper">
+      <div class="about-figure">
+        <img src="./assets/images/about/about-us.jpg" />
+      </div>
+      <div class="about-content">
+        <h2 class="about-heading">About Our Restaurant</h2>
+        <div class="text-divider">
+          <div class="divider"></div>
+          <h4>
+            We offer the best Italian dishes in a friendly and calm atmosphere.
+          </h4>
+        </div>
+        <p class="about-caption">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p class="about-caption">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur
+        </p>
+      </div>
+    </section>
+    <script src="./assets/scripts/script.js"></script>
+  </body>
 </html>

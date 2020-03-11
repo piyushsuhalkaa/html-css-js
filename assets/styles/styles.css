@@ -21,6 +21,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.container {
+  padding: 115px 80px;
+}
 header {
   background: #323232;
   border-bottom-color: #444141;
