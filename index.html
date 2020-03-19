@@ -62,6 +62,10 @@
         </div>
       </div>
     </section>
+    <!-- BottomToTop Buttton -->
+    <button onclick="bottomToTop()" id="bottomToTopBtn">
+      <img src="./assets/images/icons/ui-to-top.png" />
+    </button>
     <!-- CTA Form -->
     <section class="cta-form-wrapper">
       <div class="cta-form-box">
@@ -521,6 +525,11 @@
           </a>
         </article>
       </div>
+      <div class="recent-news-dots">
+        <span class="recent-news-dot" onclick="currentSlide(1)"></span>
+        <span class="recent-news-dot" onclick="currentSlide(2)"></span>
+        <span class="recent-news-dot" onclick="currentSlide(3)"></span>
+      </div>
     </section>
     <footer>
       <img class="footer-brand-logo" src="./assets/images/brand-logo.png" />
@@ -556,7 +565,38 @@
       </p>
     </footer>
     <!-- Scripts -->
-    <script></script>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("news-wrapper");
+        var dots = document.getElementsByClassName("recent-news-dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(
+            " recent-news-dot-active",
+            ""
+          );
+        }
+        slides[slideIndex - 1].style.display = "flex";
+        dots[slideIndex - 1].className += " recent-news-dot-active";
+      }
+    </script>
     <script src="./assets/scripts/script.js"></script>
     <script src="./assets/scripts/home.js"></script>
   </body>

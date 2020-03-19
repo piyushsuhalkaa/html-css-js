@@ -66,11 +66,12 @@
 .about-wrapper {
   background: #f5f5f5;
   display: flex;
+  padding: 115px 100px;
 }
 .about-content {
-  margin: 0 100px;
+  margin: 0 80px;
   position: relative;
-  width: 500px;
+  width: 700px;
 }
 .about-content .section-heading {
   text-align: left;
@@ -172,8 +173,21 @@ Features Section
   font-weight: 400;
   text-align: center;
 }
-.none {
-  display: none;
+.prev-testimonial {
+  position: absolute;
+  margin-top: -150px;
+  left: 20px;
+}
+.next-testimonial {
+  position: absolute;
+  margin-top: -150px;
+  right: 20px;
+}
+.prev-testimonial img {
+  width: 50px;
+}
+.next-testimonial img {
+  width: 50px;
 }
 .testimonial-author-images {
   display: flex;
@@ -237,6 +251,7 @@ Features Section
   }
   .about-wrapper {
     flex-direction: column;
+    padding: 115px 0px;
   }
   .about-content {
     margin: 0px 50px;
@@ -264,6 +279,9 @@ Features Section
   }
   .breadcrum-path {
     margin: 25px 0 -40px;
+  }
+  .about-wrapper {
+    padding: 80px 0;
   }
   .about-figure img {
     width: 350px;

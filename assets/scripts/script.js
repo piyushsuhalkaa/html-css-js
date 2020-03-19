@@ -14,19 +14,17 @@ function onScrollHeaderChange() {
     header.classList.add("header-transparent");
   }
 }
-/* Show Menu on Cick Script*/
-var showMenuItem = document.getElementsByClassName("navigation-links");
 /**
  *  Fucntion To Show Toggle Menu on Click for Small Devices
  */
-var value = 1;
+var value = true;
 function showNavMenu() {
-  if (value === 1) {
+  if (value === true) {
     document.getElementById("mobileNavigation").style.display = "block";
-    value = 2;
+    value = false;
   } else {
     document.getElementById("mobileNavigation").style.display = "none";
-    value = 1;
+    value = true;
   }
 }
 function changeImage() {
@@ -38,4 +36,24 @@ function changeImage() {
   } else {
     headerIcon.src = "./assets/images/icons/menu-icon-bar.png";
   }
+}
+
+var index = 1;
+showdiv(index);
+function getdiv(n) {
+  showdiv((index += n));
+}
+function showdiv(n) {
+  var i;
+  var as = document.getElementsByClassName("testimonial-item");
+  if (n > as.length) {
+    index = 1;
+  }
+  if (n < 1) {
+    index = as.length;
+  }
+  for (i = 0; i < as.length; i++) {
+    as[i].style.display = "none";
+  }
+  as[index - 1].style.display = "block";
 }

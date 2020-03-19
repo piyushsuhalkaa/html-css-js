@@ -97,39 +97,43 @@
       <form class="contact-form">
         <div class="input-container">
           <input
-            class="input-field form-validation-error"
+            id="inputForName"
+            class="input-field"
             type="text"
             placeholder="Your Name"
+            onclick="inputNameValidator(this.value)"
           />
-          <span class="form-validation-error-message">
+          <span id="invalidInputofName" class="form-validation-error-message">
             The text field is required.
           </span>
         </div>
         <div class="input-container">
           <input
-            class="input-field form-validation-error"
+            id="inputForMail"
+            class="input-field"
             type="email"
+            onclick="inputMailVaildator(this.value)"
             placeholder="E-mail"
           />
-          <span class="form-validation-error-message">
+          <span id="invalidInputofMail" class="form-validation-error-message">
             The email is not a valid email.
           </span>
         </div>
         <div class="input-container">
           <input
-            class="input-field form-validation-error"
+            id="inputForPhone"
+            class="input-field"
             type="tel"
             placeholder="Phone"
+            onclick="inputPhoneVaildator()"
+            required
           />
-          <span class="form-validation-error-message">
+          <span id="invalidInputofPhone" class="form-validation-error-message">
             Only numbers are required.
           </span>
         </div>
         <div class="input-container">
-          <textarea
-            class="input-field form-validation-error"
-            placeholder="Message"
-          ></textarea>
+          <textarea class="input-field" placeholder="Message"></textarea>
           <span class="form-validation-error-message">
             The text field is required.
           </span>
@@ -174,6 +178,6 @@
       </p>
     </footer>
     <script src="./assets/scripts/script.js"></script>
-    <script src="./assets/scripts/about.js"></script>
+    <script src="./assets/scripts/contact.js"></script>
   </body>
 </html>

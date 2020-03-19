@@ -123,6 +123,9 @@
 .input-container {
   position: relative;
 }
+.input-field:focus {
+  border: 1px solid #c4c4c4;
+}
 .input-field {
   display: block;
   width: 650px;
@@ -148,6 +151,7 @@
   border: 1px solid red;
 }
 .form-validation-error-message {
+  visibility: hidden;
   position: absolute;
   top: 5px;
   right: 10px;

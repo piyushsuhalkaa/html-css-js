@@ -11,10 +11,6 @@
   background: var(--colour-highlight);
   color: #fff;
 }
-*:focus {
-  outline: 0 !important;
-  border: 0 none !important;
-}
 /* Genral CSS*/
 body {
   background: #fff;
@@ -43,6 +39,24 @@ a {
   color: #151515;
   margin: 0;
   text-align: center;
+}
+#bottomToTopBtn {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  background: var(--colour-highlight);
+}
+#bottomToTopBtn img {
+  width: 15px;
 }
 header {
   background: #323232;
