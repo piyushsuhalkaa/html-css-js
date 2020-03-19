@@ -19,6 +19,23 @@ var showMenuItem = document.getElementsByClassName("navigation-links");
 /**
  *  Fucntion To Show Toggle Menu on Click for Small Devices
  */
-function showMenu() {
-  console.log("click Detected");
+var value = 1;
+function showNavMenu() {
+  if (value === 1) {
+    document.getElementById("mobileNavigation").style.display = "block";
+    value = 2;
+  } else {
+    document.getElementById("mobileNavigation").style.display = "none";
+    value = 1;
+  }
+}
+function changeImage() {
+  var headerIcon = document.getElementById("headerMenuIcon");
+  if (
+    headerIcon.getAttribute("src") == "./assets/images/icons/menu-icon-bar.png"
+  ) {
+    headerIcon.src = "./assets/images/icons/menu-icon-arrow.png";
+  } else {
+    headerIcon.src = "./assets/images/icons/menu-icon-bar.png";
+  }
 }

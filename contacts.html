@@ -1,10 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contacts | </title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts | Level 1</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="./assets/styles/contact.css" />
+  </head>
+  <body>
+    <header id="header" class="header-transparent">
+      <nav>
+        <a
+          class="menu-toggler"
+          href="javascript:void(0);"
+          onclick="showNavMenu()"
+        >
+          <img
+            id="headerMenuIcon"
+            src="./assets/images/icons/menu-icon-bar.png"
+            onclick="changeImage()"
+          />
+        </a>
+        <a href="index.html"
+          ><img class="brand-logo" src="./assets/images/brand-logo.png" alt
+        /></a>
+        <ul class="navigation-links">
+          <a class="navigation-link " href="index.html">Home</a>
+          <a class="navigation-link " href="about.html">About</a>
+          <a class="navigation-link" href="#">Typography</a>
+          <a class="navigation-link active-navigation-link" href="#"
+            >Contacts</a
+          >
+        </ul>
+        <div>
+          <button class="book-now-btn">Book Now</button>
+        </div>
+        <div id="mobileNavigation" class="mobile-navigation">
+          <a class="mobile-navigation-link" href="index.html">Home</a>
+          <a class="mobile-navigation-link" href="about.html">About</a>
+          <a class="mobile-navigation-link" href="#">Typography</a>
+          <a
+            class="mobile-navigation-link mobile-navigation-link-active"
+            href="#"
+            >Contacts</a
+          >
+          <button class="book-now-btn-sm">Book Now</button>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-wrapper">
+      <div class="hero-background">
+        <div class="hero-content">
+          <h1 class="hero-heading">Contacts</h1>
+          <ul class="breadcrum-path">
+            <li>
+              <a class="breadcrum-path-parent" href="index.html">Home</a>
+            </li>
+            <li class="breadcrum-path-child">Contacts</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container contact-box-wrapper">
+      <div class="contact-box-item">
+        <img src="./assets/images/icons/call.png" />
+        <a href="tel"><h4>1-800-123-1234</h4></a>
+        <p>You can call us anytime</p>
+      </div>
+      <div class="contact-box-item">
+        <img src="./assets/images/icons/trifold.png" />
+        <a class="" href="#">
+          <h4>51 Francis Street, San Diego, CA 91702 United States</h4>
+        </a>
+        <p class=""></p>
+      </div>
+      <div class="contact-box-item">
+        <img src="./assets/images/icons/paper-plane.png" />
+        <a href="mailto:"><h4>info@demolink.org</h4></a>
+        <p class="contact-caption">Feel free to email us your questions</p>
+      </div>
+    </section>
+    <!-- Map Section -->
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.147576296477!2d73.70747311498067!3d24.584102662332548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967ef6e9081b0c7%3A0xb7dd868820aa5744!2sGKM%20IT%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1584092601516!5m2!1sen!2sin"
+        aria-hidden="false"
+        tabindex="0"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </section>
+    <!-- Contact Form Section -->
+    <section class="container contact-form-wrapper">
+      <h2 class="section-heading">Get in Touch</h2>
+      <form class="contact-form">
+        <div class="input-container">
+          <input
+            class="input-field form-validation-error"
+            type="text"
+            placeholder="Your Name"
+          />
+          <span class="form-validation-error-message">
+            The text field is required.
+          </span>
+        </div>
+        <div class="input-container">
+          <input
+            class="input-field form-validation-error"
+            type="email"
+            placeholder="E-mail"
+          />
+          <span class="form-validation-error-message">
+            The email is not a valid email.
+          </span>
+        </div>
+        <div class="input-container">
+          <input
+            class="input-field form-validation-error"
+            type="tel"
+            placeholder="Phone"
+          />
+          <span class="form-validation-error-message">
+            Only numbers are required.
+          </span>
+        </div>
+        <div class="input-container">
+          <textarea
+            class="input-field form-validation-error"
+            placeholder="Message"
+          ></textarea>
+          <span class="form-validation-error-message">
+            The text field is required.
+          </span>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <!-- Footer  Section-->
+    <footer>
+      <img class="footer-brand-logo" src="./assets/images/brand-logo.png" />
+      <ul class="footer-nav-links">
+        <li>
+          <a class="footer-nav-link footer-nav-link-first" href="#">Home</a>
+        </li>
+        <li><a class="footer-nav-link" href="#">Blog</a></li>
+        <li><a class="footer-nav-link" href="#">Contacts</a></li>
+        <li><a class="footer-nav-link" href="#">Gallary</a></li>
+        <li>
+          <a class="footer-nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <ul class="social-icons">
+        <a class="social-icon" href="">
+          <img src="./assets/images/icons/facebook.png" alt="" />
+        </a>
+        <a class="social-icon" href="">
+          <img src="./assets/images/icons/instagram.png" alt="" />
+        </a>
+        <a class="social-icon" href="">
+          <img src="./assets/images/icons/twitter.png" alt="" />
+        </a>
+        <a class="social-icon" href="">
+          <img src="./assets/images/icons/youtube.png" alt="" />
+        </a>
+        <a class="social-icon" href="">
+          <img src="./assets/images/icons/pinterest.png" alt="" />
+        </a>
+      </ul>
+      <p class="rights">
+        © 2020 All Rights Reserved.
+        <a href="#">Privacy Policy</a>.
+      </p>
+    </footer>
+    <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/about.js"></script>
+  </body>
 </html>

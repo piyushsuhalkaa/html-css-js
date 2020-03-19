@@ -1,0 +1,237 @@
+.hero-background {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.43) 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.43) 100%
+    ),
+    url("../images/breadcrumbs.jpg");
+  background-size: cover;
+  height: 70vh;
+  background-position: bottom;
+}
+.hero-content {
+  padding-top: 20%;
+  color: #fff;
+}
+.hero-heading {
+  margin: 0;
+  padding: 0;
+  font: var(--heading-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-shadow: 0 4px 4px rgba(21, 21, 21, 0.25);
+  font-size: 45px;
+  line-height: 1.2;
+}
+.breadcrum-path {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: var(--text-font);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 35px 0 0 -40px;
+}
+.breadcrum-path-parent {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  transition: all 0.3s;
+  outline: none;
+}
+.breadcrum-path-parent:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.breadcrum-path-parent::after {
+  content: "";
+  margin-left: 20px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #fff;
+  transform: translate3d(0, -50%, 0);
+}
+.breadcrum-path-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+.contact-box-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-box-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 50px;
+  margin-bottom: 50px;
+}
+.contact-box-item img {
+  width: 90px;
+}
+.contact-box-item a {
+  color: #151515;
+  text-decoration: none;
+  width: 300px;
+  margin-top: 18px;
+  text-align: center;
+}
+.contact-box-item a h4 {
+  font: var(--heading-font);
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.contact-box-item a:hover {
+  color: var(--colour-highlight);
+}
+.contact-box-item p {
+  margin-top: 20px;
+  color: rgba(21, 21, 21, 0.5);
+}
+.map {
+  margin: 0;
+  padding: 0;
+  margin-bottom: -10px;
+}
+.map iframe {
+  width: 100%;
+  height: 68vh;
+}
+
+.contact-form-wrapper {
+  background-color: #f5f5f5;
+}
+
+.contact-form {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input-container {
+  position: relative;
+}
+.input-field {
+  display: block;
+  width: 650px;
+  margin: 10px 0;
+  padding: 16px 25px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #151515;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #c4c4c4;
+  outline: none;
+}
+.input-field::placeholder {
+  font: var(--text-font);
+  font-size: 15px;
+  color: rgba(21, 21, 21, 0.8);
+}
+.form-validation-error {
+  border: 1px solid red;
+}
+.form-validation-error-message {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: red;
+  font-size: 10px;
+  word-spacing: 1px;
+}
+.contact-form textarea {
+  padding-top: 10px;
+  height: 100px;
+}
+.contact-form button {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 300px;
+  transition: all 0.3s;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--colour-highlight);
+  border-color: var(--colour-highlight);
+  color: white;
+}
+.contact-form button:hover {
+  background-color: #444141;
+  border-color: #444141;
+}
+@media screen and (max-width: 1024px) {
+  .hero-background {
+    background-position: top;
+    height: 25vh;
+  }
+  .hero-content {
+    padding-top: 15%;
+  }
+  .hero-heading {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  .contact-box-item {
+    padding: 0 10px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 786px) {
+  .contact-box-item {
+    padding: 0px 30px;
+  }
+  .contact-box-wrapper {
+    justify-content: left;
+  }
+  .map iframe {
+    height: 35vh;
+  }
+  .input-field {
+    width: 510px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .hero-background {
+    background-size: cover;
+    height: 25vh;
+    background-position: bottom;
+  }
+  .breadcrum-path {
+    margin: 15px 0 0 -40px;
+  }
+  .contact-box-item a h4 {
+    font: var(--heading-font);
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 500;
+  }
+  .input-field {
+    width: 320px;
+  }
+  .contact-form button {
+    width: 370px;
+  }
+  .contact-form {
+    padding-top: 30px;
+  }
+  .map iframe {
+    height: 250px;
+  }
+}

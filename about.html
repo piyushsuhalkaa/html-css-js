@@ -10,17 +10,39 @@
   <body>
     <header id="header" class="header-transparent">
       <nav>
-        <a class="menu-toggler" href="javascript:void(0);" onclick="showMenu()">
-          =
+        <a
+          class="menu-toggler"
+          href="javascript:void(0);"
+          onclick="showNavMenu()"
+        >
+          <img
+            id="headerMenuIcon"
+            src="./assets/images/icons/menu-icon-bar.png"
+            onclick="changeImage()"
+          />
         </a>
-        <img class="brand-logo" src="./assets/images/brand-logo.png" alt />
+        <a href="index.html">
+          <img class="brand-logo" src="./assets/images/brand-logo.png" alt />
+        </a>
         <ul class="navigation-links">
           <a class="navigation-link " href="index.html">Home</a>
           <a class="navigation-link active-navigation-link" href="#">About</a>
+          <a class="navigation-link" href="#">Typography</a>
           <a class="navigation-link" href="contacts.html">Contacts</a>
         </ul>
         <div>
           <button class="book-now-btn">Book Now</button>
+        </div>
+        <div id="mobileNavigation" class="mobile-navigation">
+          <a class="mobile-navigation-link" href="index.html">Home</a>
+          <a
+            class="mobile-navigation-link mobile-navigation-link-active"
+            href="#"
+            >About</a
+          >
+          <a class="mobile-navigation-link" href="#">Typography</a>
+          <a class="mobile-navigation-link " href="contacts.html">Contacts</a>
+          <button class="book-now-btn-sm">Book Now</button>
         </div>
       </nav>
     </header>
@@ -44,7 +66,7 @@
         <img src="./assets/images/about/about-us.jpg" />
       </div>
       <div class="about-content">
-        <h2 class="about-heading">About Our Restaurant</h2>
+        <h2 class="section-heading">About Our Restaurant</h2>
         <div class="text-divider">
           <div class="divider"></div>
           <h4>
@@ -66,6 +88,186 @@
         </p>
       </div>
     </section>
+    <!-- Features Section -->
+    <section class="container">
+      <h2 class="section-heading">Why People Choose Us</h2>
+      <div class="features-box-container">
+        <div class="feature-box">
+          <div class="feature-box-figure">
+            <img src="./assets/images/icons/glass.png" alt />
+          </div>
+          <div class="feature-box-content">
+            <h4>
+              <a href="#">Friendly Team</a>
+            </h4>
+            <p>
+              Morbi tristique senectus et netus et malesuada fames ac turpis.
+            </p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-box-figure">
+            <img src="./assets/images/icons/plate.png" alt />
+          </div>
+          <div class="feature-box-content">
+            <h4>
+              <a href="#">Fresh Food</a>
+            </h4>
+            <p>
+              Cum resistentia mori, omnes elevatuses imperium plac.
+            </p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-box-figure">
+            <img src="./assets/images/icons/soup.png" alt />
+          </div>
+          <div class="feature-box-content">
+            <h4>
+              <a href="#">Quality Cuisine</a>
+            </h4>
+            <p>
+              Cum consilium accelerare, omnes absolutioes quaestio fatalis.
+            </p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-box-figure">
+            <img src="./assets/images/icons/cupcake.png" alt />
+          </div>
+          <div class="feature-box-content">
+            <h4>
+              <a href="#">Best Service</a>
+            </h4>
+            <p>
+              Cum onus studere, omnes consiliumes amor plac.
+            </p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-box-figure">
+            <img src="./assets/images/icons/cup.png" alt />
+          </div>
+          <div class="feature-box-content">
+            <h4>
+              <a href="#">Diverse Menu</a>
+            </h4>
+            <p>
+              Cum demolitione persuadere, omnes devatioes captis.
+            </p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-box-figure">
+            <img src="./assets/images/icons/pizza.png" alt />
+          </div>
+          <div class="feature-box-content">
+            <h4>
+              <a href="#">Affordable Prices</a>
+            </h4>
+            <p>
+              Mirabilis, gratis devatios mechanice contactus de neuter, primus
+              vigil.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section -->
+    <section class="container testimonial-wrapper">
+      <h2 class="section-heading">Testimonials</h2>
+      <div class="testimonial-items ">
+        <div class="testimonial-item none">
+          <p class="testimonial-caption">
+            A falsis, hibrida peritus fiscina. Devatio de fortis era, talem
+            abaculus! Urbs germanus abnoba est. Pol, a bene exemplar, victrix!
+            Peritus verpas ducunt ad byssus. Cum historia persuadere, omnes
+            decores.
+          </p>
+          <p class="testimonial-author">Joanna Smith</p>
+        </div>
+        <div class="testimonial-item none">
+          <p class="testimonial-caption">
+            Silvas cadunt in magnum antverpia! Ubi est grandis gabalium? Trabem
+            sapienter ducunt ad dexter hydra. Devatios sunt assimilatios de
+            alter ignigena. Est ferox lapsus, cesaris. Cum abactus tolerare,
+            omnes.
+          </p>
+          <p class="testimonial-author">James Williams</p>
+        </div>
+        <div class="testimonial-item none">
+          <p class="testimonial-caption">
+            Pius equiso virtualiter promissios fides est. Cur absolutio
+            peregrinatione? Decors congregabo in salvus cubiculum! Raptus,
+            fidelis ventuss etiam prensionem de neuter, audax classis.
+            Domesticus, camerarius aonid.
+          </p>
+          <p class="testimonial-author">Kate McMillan</p>
+        </div>
+        <div class="testimonial-item">
+          <p class="testimonial-caption">
+            Danistas sunt cannabiss de brevis domus. Vae, domina! Brodium
+            cresceres, tanquam ferox repressor. Glutens potus, tanquam brevis
+            nuptia. Fraticinida, ionicis tormento, et pars. Cum bromium
+            resistere, omnes.
+          </p>
+          <p class="testimonial-author">Peter Wilson</p>
+        </div>
+      </div>
+      <div class="testimonial-author-images">
+        <img src="./assets/images/about/user-1.jpg" alt />
+        <img src="./assets/images/about/user-2.jpg" alt />
+        <img src="./assets/images/about/user-3.jpg" alt />
+        <img src="./assets/images/about/user-4.jpg" alt />
+      </div>
+    </section>
+    <!-- Awards Section -->
+    <section class="container awards-wrapper">
+      <h2 class="section-heading">Our Awards</h2>
+      <div class="award-figures">
+        <a href="#"><img src="./assets/images/about/clients-1.png" alt/></a>
+        <a href="#"><img src="./assets/images/about/clients-2.png" alt/></a>
+        <a href="#"><img src="./assets/images/about/clients-3.png" alt/></a>
+        <a href="#"><img src="./assets/images/about/clients-4.png" alt/></a>
+      </div>
+    </section>
+    <!-- Footer  Section-->
+    <footer>
+      <img class="footer-brand-logo" src="./assets/images/brand-logo.png" />
+      <ul class="footer-nav-links">
+        <li>
+          <a class="footer-nav-link footer-nav-link-first" href="#">Home</a>
+        </li>
+        <li><a class="footer-nav-link" href="#">Blog</a></li>
+        <li><a class="footer-nav-link" href="#">Contacts</a></li>
+        <li><a class="footer-nav-link" href="#">Gallary</a></li>
+        <li>
+          <a class="footer-nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <ul class="social-icons">
+        <a class="social-icon" href="">
+          <img src="./assets/images/icons/facebook.png" alt="" />
+        </a>
+        <a class="social-icon" href="">
+          <img src="./assets/images/icons/instagram.png" alt="" />
+        </a>
+        <a class="social-icon" href="">
+          <img src="./assets/images/icons/twitter.png" alt="" />
+        </a>
+        <a class="social-icon" href="">
+          <img src="./assets/images/icons/youtube.png" alt="" />
+        </a>
+        <a class="social-icon" href="">
+          <img src="./assets/images/icons/pinterest.png" alt="" />
+        </a>
+      </ul>
+      <p class="rights">
+        © 2020 All Rights Reserved.
+        <a href="#">Privacy Policy</a>.
+      </p>
+    </footer>
     <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/about.js"></script>
   </body>
 </html>
