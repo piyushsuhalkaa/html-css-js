@@ -188,7 +188,7 @@ footer {
     padding: 100px 0;
   }
   .section-heading {
-    font-size: 25px;
+    font-size: 28px;
   }
   footer {
     padding: 90px 0;
@@ -271,8 +271,17 @@ footer {
     text-transform: uppercase;
     transition: 250ms all ease-in-out;
   }
+  .rights {
+    margin-top: 45px;
+  }
+  .section-heading {
+    font-size: 28px;
+  }
+  footer {
+    padding: 60px 0;
+  }
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 420px) {
   .container {
     padding: 50px 0;
   }
@@ -283,7 +292,6 @@ footer {
     width: 110px;
     margin-left: -130px;
   }
-
   footer {
     padding: 60px 0;
   }
@@ -295,11 +303,5 @@ footer {
   }
   .footer-nav-link {
     border: none;
-  }
-  .rights {
-    margin-top: 45px;
-  }
-  .section-heading {
-    font-size: 25px;
   }
 }
