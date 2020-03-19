@@ -213,6 +213,9 @@
     height: 25vh;
     background-position: bottom;
   }
+  .hero-content {
+    padding-top: 25%;
+  }
   .breadcrum-path {
     margin: 15px 0 0 -40px;
   }
@@ -222,8 +225,14 @@
     line-height: 33px;
     font-weight: 500;
   }
+  .contact-box-item {
+    margin-bottom: 50px;
+  }
   .input-field {
     width: 320px;
+  }
+  .contact-box-wrapper {
+    justify-content: center;
   }
   .contact-form button {
     width: 370px;

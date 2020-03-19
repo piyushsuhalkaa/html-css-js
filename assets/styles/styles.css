@@ -217,27 +217,16 @@ footer {
   }
   .brand-logo {
     float: left;
-    height: 40px;
-    margin-left: -70vw;
+    width: 110px;
+    margin-left: -40vw;
     text-align: left;
   }
+
   .navigation-links {
     display: none;
   }
   .book-now-btn {
     display: none;
-  }
-}
-@media screen and (max-width: 411px) {
-  .container {
-    padding: 50px 0;
-  }
-  .header-transparent {
-    position: fixed;
-  }
-  .brand-logo {
-    width: 110px;
-    margin-left: -130px;
   }
   .mobile-navigation {
     display: none;
@@ -282,6 +271,19 @@ footer {
     text-transform: uppercase;
     transition: 250ms all ease-in-out;
   }
+}
+@media screen and (max-width: 411px) {
+  .container {
+    padding: 50px 0;
+  }
+  .header-transparent {
+    position: fixed;
+  }
+  .brand-logo {
+    width: 110px;
+    margin-left: -130px;
+  }
+
   footer {
     padding: 60px 0;
   }
