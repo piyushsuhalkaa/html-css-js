@@ -649,6 +649,9 @@
 }
 @media screen and (max-width: 420px) {
   /* Hero Section*/
+  .hero-content {
+    margin-top: 90px;
+  }
   .hero-heading {
     font-size: 32px;
     line-height: 30px;
@@ -684,6 +687,9 @@
   .form-item-submit-button {
     margin-top: 20px;
     margin-left: -180px;
+  }
+  .error-message {
+    top: 50px;
   }
   /* About Section*/
   .about-wrapper {
