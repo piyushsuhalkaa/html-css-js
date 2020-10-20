@@ -1,3 +1,3 @@
 # html-css-js
 HTML CSS JS PROJECT
-This project is built on html css js
+This project is built on HTML CSS JS
